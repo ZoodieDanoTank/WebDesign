@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        /* Your existing styles here */
+
+        .scrollable-area {
+            width: 1920px;
+            height: 800px;
+            overflow: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        /* Your existing styles here */
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">BrainHike&#129504;</div>
+        <div class="nav-items">
+            <a href="/">Home</a>
+            <a href="/">Tips</a>
+            <a href="/">Forum</a>
+            <a href="/">Contact</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="column-left">
+                <h1>Beat Procrastination</h1>
+                <p>
+                    A forum created by master procrastinators,
+                    gain control of your life today. We motivate 
+					each other to reach our full potentiol, become
+					the monopoly man.	
+                </p>
+                <button>Get Started</button>
+            </div>
+            <div class="column-right">
+                <img
+                    src="businessman-lift-the-big-gold-trophy-png.png"
+                    alt="illustration"
+                    class="hero-image"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Thumbnails -->
+    <div class="gallery-thumbnails">
+        <img src="large111.jpg" onclick="showImage(1)" alt="Thumbnail 1">
+        <img src="large2222.jpg" onclick="showImage(2)" alt="Thumbnail 2">
+        <img src="large3333.jpg" onclick="showImage(3)" alt="Thumbnail 3">
+        <img src="large4444.jpg" onclick="showImage(4)" alt="Thumbnail 4">
+    </div>
+    <!-- End of Gallery Thumbnails -->
+
+    <!-- Adding the scrollable area -->
+   <div class="scrollable-area">
+   <br>
+    <br>
+	 <br>
+	  <br>
+		
+     <h2 style="color: #000000;">Regain Control Over Your Life and Start Winning</h2>
+    <br>
+    <p style="font-size: 18px; font-weight: bold;font-family: font-family: Arial, sans-serif">
+        Procrastination is an age-old challenge that 
+		plagues individuals from all walks of life.
+        It is the act of delaying or postponing tasks, 
+		often leading to stress, missed opportunities,
+        and reduced productivity. While it may seem like 
+		a common human tendency, working against
+        procrastination holds immense importance for 
+		personal growth, professional success, and overall well-being.
+        In this essay, we will explore the significance 
+		of combating procrastination and the positive 
+		impact it can have on one's life.
+    </p>
+    <br>
+    <h3>Enhanced Productivity</h3>
+    <p>
+        One of the primary reasons to combat procrastination 
+		is the direct correlation between productivity and efficiency.
+        When we put off tasks, they tend to pile up, creating 
+		a daunting and overwhelming workload. On the other hand,
+        addressing tasks promptly enables us to complete them 
+		in a focused manner, leading to increased productivity
+        and reduced stress. By working against procrastination
+		, individuals can accomplish more within a given time frame,
+        ultimately achieving their goals more efficiently.
+    </p>
+    <br>
+    <h3>Time Management</h3>
+    <p>
+        Procrastination hinders effective time management, as 
+		it causes individuals to allocate time inefficiently.
+        Those who procrastinate often find themselves rushing 
+		through tasks at the last minute, sacrificing 
+		quality and attention to detail.
+        On the contrary, by addressing tasks promptly and 
+		distributing time appropriately, individuals can 
+		strike a balance between their personal and 
+		professional responsibilities. Effective time 
+		management allows for better planning,
+        setting realistic deadlines, and maintaining a sense of 
+		control over one's life.
+    </p>
+    <br>
+    <!-- Add other sections with similar styling -->
+    <br>
+    <br>
+    <p style="font-size: 18px; font-style: italic;">
+        In conclusion, the importance of working against 
+		procrastination cannot be overstated.
+        By taking prompt and decisive action, individuals 
+		can enhance productivity, improve time management,
+        foster better mental health, maximize opportunities, 
+		and strengthen relationships.
+        Additionally, overcoming procrastination leads to better 
+		decision-making and reduced stress levels,
+        ultimately contributing to a more fulfilling and successful
+
+
+  <br>
+  <br>
+    <section class="contact">
+        <h2>Contact the Professionals</h2>
+        <form onsubmit="return validateForm()">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Ireland</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                    <option value="India">India</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+    <!-- End of Contact Section -->
+
+    <!-- Gallery Image Viewer -->
+    <div class="image-viewer" id="imageViewer" style="display: none;">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img src="" alt="Large Image" id="largeImage">
+        <p id="imageDescription">Description of the large image.</p>
+    </div>
+    <!-- End of Gallery Image Viewer -->
+
+    <!-- Link the JavaScript files -->
+    <script src="gallery.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
+
